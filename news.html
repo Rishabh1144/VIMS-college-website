@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --dark-blue: #0d144f;
+            --semi-dark-blue: #04107d;
+            --bg-quick-links: #003c66;
+            --dark-aqua: #055a92;
+            --semi-dark-aqua: #0a6eae;
+            --skyblue: #0096ff;
+            --bg-footer: #1E2034;
+            --txt-footer: #999;
+            --bg-announce: #e1e3e9;
+            --txt-golden: #B27E2D;
+            --txt-white: white;
+            --shadow-1-color: lightblue;
+            --shadow-2-color: grey;
+            --shadow-3-color: lightgray;
+            --black-color: #000;
+
+        }
+        .news-cnt{
+            width: 100%;
+            margin-top: 4rem;
+            /* padding: 0 2rem; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .news-cnt .news, 
+        .news-cnt .activity,
+        .news-cnt .companies{
+            width: 30%;
+            height: 75vh;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+        .news-cnt .heading{
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: linear-gradient(to right, var(--semi-dark-blue), var(--semi-dark-aqua), var(--semi-dark-aqua));
+            color: var(--txt-white);
+            padding: .4rem .8rem;
+        }
+        .news-cnt .activity .heading{
+            background: linear-gradient(to right, var(--txt-golden), var(--txt-footer));
+        }
+        .news-cnt .activity img{ 
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: .5rem;
+        }
+        marquee{
+            width: 100%;
+            height: 100%;
+        }
+        .news-cnt .news{
+            background: #ebebeb;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .news-cnt .news .card{
+            width: 100%;
+            height: 25vh;
+            padding: 1rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+        }
+        .news-cnt .news .card .img{
+            width: 35%;
+            height: 100%;
+            background: var(--txt-white);
+            border: 1px solid var(--shadow-2-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .news-cnt .news .card .img img{
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+        }
+        /* .news .card .info{
+            
+        } */
+        .news .card .info span{
+            display: block;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--semi-dark-aqua);
+        }
+        .news .card .info p{
+            margin-bottom: 3.5rem;
+            color: var(--dark-blue);
+        }
+        .news-cnt .companies table{
+            width: 100%;
+            height: 100%;
+        }
+        .companies table td{
+            width: 33%;
+            height: 33%;
+            padding: 1rem;
+        }
+        .companies table td img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02d4db2b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ......................header section.................... -->
+
+    <header> </header>
+
+
+    <!-- .....................................latest news section.......................................... -->
+
+
+    <div class="news-cnt">
+        <div class="news">
+            <span class="heading">Latest News</span>
+            <marquee behavior="" direction="up" scrollamount="11">
+            <div class="card">
+                <div class="img">
+                    <img src="images/news1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <span>Blood Donation Camp - 2024</span>
+                    <p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        03/2024
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="images/news1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <span>Blood Donation Camp - 2024</span>
+                    <p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        03/2024
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="images/news1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <span>Blood Donation Camp - 2024</span>
+                    <p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        03/2024
+                    </p>
+                </div>
+            </div>
+        </marquee>
+
+        </div> <!-- latest news end -->
+
+
+        <!-- .....................................Current event section....................................... -->
+
+
+        <div class="activity">
+            <span class="heading"> Current Events</span>
+            <marquee behavior="" direction="up" scrollamount="11">
+            <div class="card">
+                <img src="images/artfest.png" alt="">
+            </div>
+            <div class="card">
+                <img src="images/technofest.png" alt="">
+            </div>
+            <div class="card">
+                <img src="images/cc-reg.jpg" alt="">
+            </div>
+        </marquee>
+        </div> <!-- current event end-->
+
+
+        <!-- ...................................visited companies..................................... -->
+
+
+        <div class="companies">
+            <span class="heading">Visited Companies</span>
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/comp1.jpeg" alt="">
+                    </td>
+                    <td>
+                        <img src="images/comp2.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="images/comp3.png" alt="">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <img src="images/comp4.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="images/comp5.png" alt="">
+                    </td>
+                    <td>
+                        <img src="images/comp6.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/comp7.png" alt="">
+                    </td>
+                    <td>
+                        <img src="images/comp8.png" alt="">
+                    </td>
+                    <td>
+                        <img src="images/comp9.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/comp10.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="images/comp11.png" alt="">
+                    </td>
+                    <td>
+                        <img src="images/comp12.png" alt="">
+                    </td>
+                </tr>
+
+            </table>
+        </div> <!-- visited company end -->
+
+    </div>
+
+    <!-- ..................footer section....................... -->
+
+    <footer> </footer>
+
+    <script type="text/javascript" src="headFoot.js"></script>
+</body>
+</html>

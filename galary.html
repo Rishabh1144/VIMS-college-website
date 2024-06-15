@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galary</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .banner{
+            width: 100%;
+            height: 30vh;
+            background-color: yellow;
+            background: linear-gradient(to right, black, transparent), url("images/vims.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-top: 2%;
+            display: flex;
+            align-items: center;
+        }
+        .banner span{
+            display: block;
+            font-size: 1.5rem;
+            font-style: oblique;
+            /* font-weight: 600; */
+            color: white;
+            margin-left: 10%;
+
+        }
+        .sub-nav{
+            width: 100%;
+            height: 2rem;
+            background: var(--shadow-3-color);
+            padding-left: 3rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+        .sub-nav a{
+            font-size: .9rem;
+            color: #555555;
+            transition: .2s linear;
+            &:hover{
+                color: black;
+            }
+        }
+        .sub-nav .fa-solid{
+            font-size: .5rem;
+            color: grey;
+        }
+        .photo-heading{
+            width: 100%;
+            padding-left: 3rem;
+            margin-top: 2.5rem;
+        }
+        .photo-heading span{
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-left: 5px solid var(--txt-golden);
+            padding: 0 .5rem;
+        }
+        .photos-cnt{
+            width:  100%;
+            padding: 0 3rem;
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 1.4rem;
+        }
+        .photos-cnt .card{
+            width: calc(33vw - 2.8rem);
+            height: 30vh;
+            overflow: hidden;
+        }
+        .photos-cnt .card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position:center 0px;
+            cursor:  pointer;
+            transition: .2s linear;
+            
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+    </style>
+    <script src="https://kit.fontawesome.com/02d4db2b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- .....................header section.......................  -->
+
+    <header> </header>
+
+    <div class="banner">
+            <span>Photo Galary</span>
+    </div>
+    <div class="sub-nav">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <a href="galary.html">Photo Galary</a>
+    </div>
+
+    <div class="photo-heading">
+        <span>All Pictures</span>
+    </div>
+
+    <div class="photos-cnt">
+
+        <div class="card">
+            <a href="images/workshop.jpg">
+            <img src="images/workshop.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/award.jpg">
+            <img src="images/award.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/workshop.jpg">
+            <img src="images/workshop.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/sport-ground.jpg">
+            <img src="images/sport-ground.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/library.png">
+            <img src="images/library.png" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/canteen.jpg">
+            <img src="images/canteen.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/workshop.jpg">
+            <img src="images/workshop.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/award.jpg">
+            <img src="images/award.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/workshop.jpg">
+            <img src="images/workshop.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/sport-ground.jpg">
+            <img src="images/sport-ground.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/library.png">
+            <img src="images/library.png" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/canteen.jpg">
+            <img src="images/canteen.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/workshop.jpg">
+            <img src="images/workshop.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/award.jpg">
+            <img src="images/award.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/workshop.jpg">
+            <img src="images/workshop.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/sport-ground.jpg">
+            <img src="images/sport-ground.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/library.png">
+            <img src="images/library.png" alt="" title="click to view">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="images/canteen.jpg">
+            <img src="images/canteen.jpg" alt="" title="click to view">
+            </a>
+        </div>
+
+
+    </div>
+
+
+    <!-- ......................footer section......................  -->
+
+    <footer> </footer>
+
+    <script type="text/javascript" src="headFoot.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --dark-blue: #0d144f;
+            --semi-dark-blue: #04107d;
+            --bg-quick-links: #003c66;
+            --dark-aqua: #055a92;
+            --semi-dark-aqua: #0a6eae;
+            --skyblue: #0096ff;
+            --bg-footer: #1E2034;
+            --txt-footer: #999;
+            --bg-announce: #e1e3e9;
+            --txt-golden: #B27E2D;
+            --txt-white: white;
+            --shadow-1-color: lightblue;
+            --shadow-2-color: grey;
+            --shadow-3-color: lightgray;
+            --black-color: #000;
+
+        }
+        body{
+            background: #dfdfdf;
+        }
+        .about-cnt{
+            width: 80%;
+            margin: 3rem auto;
+            
+        }
+        /* .about-cnt .cnt-heading{
+            
+        } */
+        .about-cnt .cnt-heading span{
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--semi-dark-blue);
+        }
+        .about-cnt .cnt-heading hr{
+            border: none;
+            background: var(--txt-golden);
+            height: 2px;
+            margin-bottom: 4px;
+        }
+        .about-cnt .cnt-heading .hr1{
+            width: 80px;
+            margin-top: .3rem;
+        }
+        .about-cnt .cnt-heading .hr2{
+            width: 30px;
+        }
+
+        .about-cnt .policy{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .about-cnt table{
+            width: 73%;
+            margin-top: 2.5rem;
+            border-collapse: collapse;
+            background-color: var(--bg-announce);
+            transition: .2s linear;
+            
+        }
+        .about-cnt table:hover {
+            transform: scale(1.01);
+        }
+        .about-cnt th, td {
+            border: 1px solid;
+            padding: .5rem 1rem;
+            text-align: left;
+        }
+        
+        .about-cnt table tr:nth-child(1) th{
+            background: var(--shadow-3-color);
+            /* color: white; */
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: .2s linear;
+            text-align: center;
+        }
+        .about-cnt table td{
+            font-size: .9rem;
+        }
+        .about-cnt table tr:nth-child(odd){
+            background:var(--shadow-3-color);
+        }
+        .about-cnt table tr:hover{
+            background: var(--shadow-3-color);
+        }
+
+        .about-cnt .subscribe{
+            width: 25%;
+            border: 1px solid black;
+            margin-top: 2.5rem;
+            padding: 2rem;
+            background: var(--bg-footer);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: .2s linear;
+
+            &:hover{
+                transform: scale(1.01);
+            }
+        }
+        .about-cnt .subscribe span{
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--txt-white);
+
+        }
+        .about-cnt .subscribe hr{
+            width: 20%;
+            height: 3px;
+            border: none;
+            border-radius: 10px;
+            margin-left: .2rem;
+            margin-top: .6rem;
+            background-color: var(--txt-golden);
+        }
+        .about-cnt .subscribe p{
+            color: var(--txt-footer);
+            margin: 2rem 0;
+        }
+        .about-cnt .subscribe #email{
+            border: none;
+            outline: none;
+            height: 2.5rem;
+            width: 100%;
+            padding: .5rem;
+            background: #ffffff39;
+            color: var(--txt-white);
+        }
+        .about-cnt .subscribe input[type="submit"]{
+            width: 100%;
+            height: 2.5rem;
+            margin-top: 1rem;
+            border: none;
+            letter-spacing: 1px;
+            background: var(--txt-golden);
+            color: var(--txt-white);
+            cursor: pointer;
+            transition: .2s linear;
+            
+            &:hover{
+                background: var(--txt-footer);
+            }
+        }
+
+        .about-cnt .mission-vision{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+            background: var(--shadow-3-color);
+            padding: 3rem 0;
+            border-radius: .3rem;
+        }
+        .mission-vision .card{
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+
+        }
+        .mission-vision .card:nth-child(2){
+            border-right: 3px solid var(--txt-white);
+            border-left: 3px solid var(--txt-white);
+
+        }
+        .mission-vision .card img{
+            width: 30%;
+            border-radius: 50%;
+            transition: .2s linear;
+        }
+        .mission-vision .card span{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--dark-blue);
+            margin: 1rem 0;
+            transition: .2s linear;
+        }
+        .mission-vision .card p{
+            padding: 0 20%;
+            text-align: center;
+            transition: .2s linear;
+        }
+        .mission-vision .card:hover img,
+        .mission-vision .card:hover span{
+            transform: scale(1.03);
+            color: var(--txt-golden);
+        }
+
+        .about-cnt .our-grp{
+            margin: 2rem 0;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/02d4db2b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ....................header section.................. -->
+
+    <header></header>
+    
+    <div class="about-cnt">
+
+        <div class="cnt-heading">
+            <span>Our Group</span>
+            <hr class="hr1">
+            <hr class="hr2">
+        </div>
+        <div class="our-grp">
+            <p>
+                With the aim to introduce and promote higher education in <b>Vindhya region of Madhya Pradesh DPR</b> charitable trust came in existence <b>in 2001</b>.In 2002 it came up with the first private engineering institute of region in a small <mark>district Satna</mark>. In order to meet the rising aspirations of the youths various new courses got added gradually. Presently <b>5 Institutions</b> of higher education and a CBSE affiliated school are successfully serving the society under the umbrella of <b>DPR</b> charitable Trust 
+                <br><br>
+                Till now more than <b>18000 students</b> have graduated from the intuitions. In the journey it   has produced several state toppers. Its distinguished alumni are placed across the globe   in various multinational corporates and are also serving in government organizations at   various levels. It has strong industry institute interface that helps in training and   placement activities of the students. Currently <b>4000 students</b> are enrolled in   various courses.
+            </p>
+        </div>
+        
+        <div class="cnt-heading">
+            <span>Policy</span>
+            <hr class="hr1">
+            <hr class="hr2">
+        </div>
+        <div class="policy">
+            <table>
+                
+                <tr>
+                    <th>Value</th>
+                    <th>Code Of Conduct</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Excellence</th>
+                    <td>Dream big</td>
+                </tr>
+                <tr>
+                    <td>Never being satisfied</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Trust</th>
+                    <td>Be fair - do what is right </td>
+                </tr>
+                <tr>
+                    <td>win win attitude, creative solution </td>
+                </tr>
+                <tr>
+                    <th rowspan="2">integrity</th>
+                    <td>Do what you say, say what you do</td>
+                </tr>
+                <tr>
+                    <td>if fall become aware and acknowledge</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Compassion</th>
+                    <td>Don't judge </td>
+                </tr>
+                <tr>
+                    <td>Listen and Connect</td>
+                </tr>
+            </table>
+
+            <div class="subscribe">
+                <span>Our Newsletter</span>
+                <hr>
+                <p>
+                    Get awesome content delivered <br>
+                    straight to your inbox.
+                </p>
+                <form action="">
+                    <input type="email" name="" id="email" placeholder="Enter your email">
+                    <input type="submit" value="GET UPDATES">
+                </form>
+            </div>
+
+
+        </div>
+
+        <div class="mission-vision">
+            <div class="card">
+                <img src="images/vision.png" alt="">
+                <span>Vision</span>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto volupt commodi dolore in quasi modi. Libero eaque.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="images/mission.png" alt="">
+                <span>Mission</span>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto volupt commodi dolore in quasi modi. Libero eaque.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="images/value.png" alt="">
+                <span>Value</span>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto volupt commodi dolore in quasi modi. Libero eaque.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- .................footer section................... -->
+
+    <footer></footer>
+
+    <script type="text/javascript" src="headFoot.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .banner{
+            width: 100%;
+            height: 30vh;
+            background-color: yellow;
+            background: linear-gradient(to right, black, transparent), url("images/vims.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-top: 2%;
+            display: flex;
+            align-items: center;
+        }
+        .banner span{
+            display: block;
+            font-size: 1.5rem;
+            font-style: oblique;
+            /* font-weight: 600; */
+            color: white;
+            margin-left: 10%;
+
+        }
+        .sub-nav{
+            width: 100%;
+            height: 2rem;
+            background: var(--shadow-3-color);
+            padding-left: 3rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+        .sub-nav a{
+            font-size: .9rem;
+            color: #555555;
+            transition: .2s linear;
+            &:hover{
+                color: black;
+            }
+        }
+        .sub-nav .fa-solid{
+            font-size: .5rem;
+            color: grey;
+        }
+        .cnt-heading{
+            width: 100%;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .cnt-heading span{
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-left: 5px solid var(--txt-golden);
+            padding: 0 .5rem;
+            margin-left: 10%;
+        }
+
+        .place-cnt{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 1.2rem;
+        }
+        .place-cnt .card{
+            width: calc(25% - 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+            padding: 1rem 0;
+            border: 1px solid grey;
+            border-radius: 1rem;
+            transition: .1s linear;
+
+            &:hover{                
+            box-shadow: 0 0 10px 0 var(--shadow-3-color);
+            }
+        }
+        .place-cnt .card img{
+            width: 40%;
+            border-radius: 50%;
+            padding: 4px;
+            border: 1px solid var(--shadow-3-color);
+        }
+        .place-cnt .card .name{
+            font-size: 1.5rem;
+            color: var(--dark-aqua);
+        }
+        .place-cnt .card .detail {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .place-cnt .card .detail span{
+            font-weight: 600;
+        }
+
+        .strap{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            background: var(--dark-blue);
+        }
+        .strap .card{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .strap .card .fa-solid{
+            font-size: 3rem;
+            color: white;
+        }
+        .strap .card span{
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 1rem 0;
+            color: var(--txt-golden);
+        }
+        .strap .card p{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: white;
+        }
+
+    </style>
+        <script src="https://kit.fontawesome.com/02d4db2b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header></header>
+
+    <div class="banner">
+        <span>Our Placements</span>
+</div>
+<div class="sub-nav">
+    <a href="index.html">Home</a>
+    <i class="fa-solid fa-angles-right"></i>
+    <a href="t&p.html">Tranning & Placements</a>
+</div>
+
+<div class="cnt-heading">
+    <span>Placed Students</span>
+</div>
+
+<div class="place-cnt">
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/std.png" alt="">
+        <div class="name">Vikash Mishra</div>
+        <div class="detail">
+            <p>
+                Designation
+            <span class="post">Software engineer</span>
+            </p>
+
+            <p>
+                Batch of
+            <span class="batch">2019-2022</span>
+            
+            </p>
+
+            <p>
+                Course
+            <span class="course">BCA</span>
+                Company
+            <span class="Company">HCL</span>
+            </p>
+
+            <p>
+                Package
+            <span class="pack">6.5 lpa</span>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- ...........................strap................................ -->
+
+<div class="strap">
+    <div class="card">
+        <i class="fa-solid fa-users"></i>
+        <span class="std-no">18000+</span>
+        <p>TOTAL STUDENTS</p>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-building"></i>
+        <span class="comp-no">185+</span>
+        <p>VISITED COMPANIES</p>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span class="place-std">6000+</span>
+        <p>PLACED STUDENTS</p>
+    </div>
+
+
+</div> <!-- strap end -->
+
+
+<footer></footer>
+
+<script type="text/javascript" src="headFoot.js"></script>
+
+
+</body>
+</html>

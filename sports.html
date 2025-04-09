@@ -5,48 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="banner.css">
     <style>
-        .banner{
-            width: 100%;
-            height: 30vh;
-            background-color: yellow;
-            background: linear-gradient(to right, black, transparent), url("images/vims.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            margin-top: 2%;
-            display: flex;
-            align-items: center;
-        }
-        .banner span{
-            display: block;
-            font-size: 1.5rem;
-            font-style: oblique;
-            /* font-weight: 600; */
-            color: white;
-            margin-left: 10%;
+
+        /* sport container   */
+
+        .sport-cnt{
+            width: 80%;
+            margin: auto;
 
         }
-        .sub-nav{
+        .sport-cnt .sport-hd{
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            margin-bottom: .4rem;
+        }
+        .sport-cnt .box{
             width: 100%;
-            height: 2rem;
-            background: var(--shadow-3-color);
-            padding-left: 3rem;
             display: flex;
-            align-items: center;
-            gap: .5rem;
+            
         }
-        .sub-nav a{
-            font-size: .9rem;
-            color: #555555;
-            transition: .2s linear;
-            &:hover{
-                color: black;
-            }
+        .sport-cnt .box img,
+        .sport-cnt .box .description{
+            width: 50%;
         }
-        .sub-nav .fa-solid{
-            font-size: .5rem;
-            color: grey;
+        .box .description{
+            padding: 1rem;
+        }
+        .box .description p:first-letter{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .box img{
+            object-fit: cover;
         }
     </style>
 
@@ -66,6 +59,83 @@
     <i class="fa-solid fa-angles-right"></i>
     <a href="sports.html">Sports</a>
 </div>
+
+
+    <div class="sport-cnt">
+
+        <span class="sport-hd">Cricket:</span>
+        <div class="box">
+            
+            <div class="description">
+                <p>
+
+                    Our college takes pride in offering a strong platform for cricket enthusiasts to develop their skills and shine on the field. Here's why cricket thrives at our institution: <br><br>
+
+State-of-the-Art Facilities: Our college has a well-maintained cricket ground with practice nets and top-quality equipment to support both recreational and competitive cricket. <br><br>
+Professional Coaching: We offer expert coaching sessions led by experienced cricketers, helping students enhance their game. <br> <br>
+Intercollegiate Tournaments: We actively participate in district, state, and national-level tournaments, providing students with the opportunity to represent the college and build their sports careers. <br><br>
+Career Development: Many of our cricket players have gone on to play at higher levels, including league teams and professional circuits, thanks to the strong foundation we offer. <br><br>
+Cricket at VIMS is more than just a sport—it's a chance for students to excel, make lasting memories, and build promising careers in sports. <br><br>
+
+                </p>
+            </div>
+            <img src="images/cricket.jpg" alt="">
+        </div>
+
+        <span class="sport-hd">Table Tennis:</span>
+        <div class="box">
+            <img src="images/table-tennis.jpg" alt="">
+            <div class="description">
+                <p>
+
+                    Table tennis is one of the most engaging and fast-paced sports offered at our college. Our infrastructure and support system ensure that students get the best platform to pursue this sport. <br><br>
+
+                    Indoor Facilities: Our college boasts a well-equipped indoor sports arena with professional-level table tennis tables and equipment. <br><br>
+                    Individual and Team Competitions: We organize regular intra-college and intercollegiate table tennis tournaments, allowing students to showcase their talents. <br><br>
+                    Expert Guidance: Dedicated coaches provide personalized training to enhance agility, reflexes, and technique. <br><br>
+                    Sports Scholarships: For students excelling in table tennis, we offer scholarships and avenues to participate in regional and national championships. <br><br>
+
+                </p>
+            </div>
+        </div>
+
+        <span class="sport-hd">Kabaddi:</span>
+        <div class="box">
+            
+            <div class="description">
+                <p>
+
+                    Kabaddi, an indigenous Indian sport, holds a special place in our college sports culture. We offer one of the best platforms for students to excel in this energetic and strategic game. <br><br>
+
+                    Specialized Kabaddi Court: Our college has a designated kabaddi court that meets official standards, making it perfect for professional practice. <br><br>
+                    Coaching and Training Camps: Under the guidance of experienced kabaddi players and coaches, students receive rigorous training in tactics, strength, and agility. <br><br>
+                    Tournaments and Recognition: Our college regularly hosts kabaddi tournaments and participates in national competitions, giving students ample exposure and opportunities to gain recognition. <br><br>
+                    Support for Sports Careers: Many of our kabaddi players have successfully moved on to professional leagues, and we offer all the support needed to make this transition smoother. <br><br>
+
+                </p>
+            </div>
+            <img src="images/kabaddi.jpg" alt="">
+        </div>
+
+        <span class="sport-hd">Badminton:</span>
+        <div class="box">
+            <img src="images/badminton.jpg" alt="">
+            <div class="description">
+                <p>
+
+                    Badminton is one of the most popular and widely-played sports in our college. We are proud to offer excellent facilities and training to students who wish to pursue badminton competitively or recreationally. <br><br>
+
+Dedicated Badminton Courts: Our college has top-class indoor badminton courts equipped with professional-quality lighting and flooring to ensure the best playing experience. <br><br>
+High-Level Coaching: Experienced coaches provide students with regular training sessions to improve their skills, strategy, and fitness levels. <br><br>
+College Representation: Our badminton teams have a strong record in intercollegiate tournaments, and we encourage students to represent the college at state and national levels. <br><br>
+Pathway to Professional Sports: With regular exposure to competitions and guided support, students have a clear path to pursuing professional careers in badminton. <br><br>
+
+                </p>
+            </div>
+        </div>
+
+
+    </div>
 
 
     <!-- ......................footer section......................  -->

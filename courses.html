@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="facility.css">
+    <link rel="stylesheet" href="banner.css">
+    <style>
+        
+        /* course container  */
+
+        .course-cnt{
+            width: 80%;
+            display:flex;
+            flex-direction: column;
+            margin: auto;
+        }
+        .course-cnt .section{
+            width:100%;
+
+        }
+        .section .section-hd{
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            margin-bottom: .4rem;
+        }
+        .section .card{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1.4rem;
+            border: 1px solid;
+        }
+        .section .card .cname{
+            font-weight: 500;
+        }
+        .section .card .box{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .card .box a{
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        </style>
+    
+
+    <script src="https://kit.fontawesome.com/02d4db2b6f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- .......................header section.............................. -->
+
+    <header></header>
+
+    <div class="banner">
+        <span>Our Placements</span>
+</div>
+<div class="sub-nav">
+    <a href="index.html">Home</a>
+    <i class="fa-solid fa-angles-right"></i>
+    <a href="t&p.html">Tranning & Placements</a>
+</div>
+
+
+    <div class="course-cnt">
+        <div class="section">
+            <span class="section-hd">Computer Application</span>
+
+            <div class="card">
+                <span class="cname">BCA</span>
+                <p>bachelor of computer applications</p>
+                <div class="box">
+                    <a href="https://apsurewa.ac.in/en/syllabus-mca">Syllabus</a>
+                    <span class="dur">Duration: 3 Years</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="section">
+            <span class="section-hd">Science Department</span>
+
+            <div class="card">
+                <span class="cname">B.Sc(CS)</span>
+                <p>b.sc computer science</p>
+                <div class="box">
+                    <a href="https://apsurewa.ac.in/en/syllabus-cs">Syllabus</a>
+                    <span class="dur">Duration: 4 Years</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <span class="cname">B.Sc(Biotech)</span>
+                <p>b.sc bio technology</p>
+                <div class="box">
+                    <a href="https://apsurewa.ac.in/en/syllabus-ece">Syllabus</a>
+                    <span class="dur">Duration: 4 Years</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <span class="section-hd">Commerce Department</span>
+
+            <div class="card">
+                <span class="cname">B.Com</span>
+                <p>bachelor of commerce</p>
+                <div class="box">
+                    <a href="https://apsurewa.ac.in/en/syllabus-be">Syllabus</a>
+                    <span class="dur">Duration: 4 Years</span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div> <!--course-cnt end-->
+
+    <footer></footer>
+
+    <script type="text/javascript" src="headFoot.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admission enquiry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="banner.css">
+    <style>
+
+        form{
+            width: 85%;
+            margin: auto;
+            margin-top: 1rem;
+        }
+        form table{
+            width: 100%;
+            /* border:1px solid black; */
+        }
+        table tr td{
+            /* border: 1px solid; */
+            padding: .8rem;
+        }
+        form table label{
+            display: block;
+            margin-bottom: .5rem;
+            font-size: 1rem;
+        }
+        form table input,
+        form table select{
+            width: 100%;
+            height: 2.3rem;
+            padding-left: .8rem;
+            background: none;
+            border: 1px solid var(--shadow-3-color);
+        }
+        form input[type="submit"]{
+            width: 8%;
+            height: 2.3rem;
+            margin-left: 1rem;
+            margin-top: .5rem;
+            font-size: 1rem;
+            background: var(--semi-dark-blue);
+            color: white;
+            border: none;
+            border-radius: .2rem;
+            cursor: pointer;
+            &:hover{
+                background: var(--txt-golden);
+            }
+        }
+        #address,
+        #query{
+            width: 100%;
+            font-size: .9rem;
+            font-family: sans-serif;
+            padding: .5rem;
+        }
+        form table tr td span{
+            display: block;
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid var(--shadow-3-color);
+
+        }
+        .e-broucher{
+            width: 70%;
+            margin: auto;
+            padding: 3rem;
+            border-radius: .8rem;
+            background: var(--shadow-1-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4rem;
+
+        }
+        .e-broucher span{
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .e-broucher a{
+            background: var(--semi-dark-blue);
+            color: white;
+            padding: .5rem 1rem;
+            border-radius: .2rem;
+            margin-top: .5rem;
+            &:hover{
+                background: var(--txt-golden);
+            }
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/02d4db2b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- .....................header section.......................  -->
+
+    <header></header>
+
+
+    <div class="banner">
+        <span>Admission Enquiry</span>
+</div>
+<div class="sub-nav">
+    <a href="index.html">Home</a>
+    <i class="fa-solid fa-angles-right"></i>
+    <a href="enquiry.html">Admission</a>
+</div>
+
+
+    <form action="#">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <span>Admission Enquiry</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </td>
+                <td>
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" name="contact" id="contact" maxlength="10" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Whatsapp">Whatsapp Number:</label>
+                    <input type="tel" name="Whatsapp" id="whatsapp" maxlength="10" required>
+                </td>
+                <td>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="course">Course:</label>
+                    <select name="course" id="course" required>
+                        <option selected disabled>Select</option>
+                        <option>BCA</option>
+                        <option>B.Sc</option>
+                        <option>B.Com</option>
+                        <option>BBA</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="branch">Branch:</label>
+                    <select name="branch" id="branch" required>
+                        <option selected disabled>Select</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address:</label>
+                    <textarea name="address" rows="4" id="address" required></textarea>
+                </td>
+                <td>
+                    <label for="query">Query:</label>
+                    <textarea name="query" rows="4" id="query" required></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Submit">
+        
+    </form>
+
+    <div class="e-broucher">
+        <span>VITS quick look</span>
+        <p>For e-broucher click below:</p>
+        <a href="#">E-BROUCHER</a>
+    </div>
+
+
+    <!-- ......................footer section......................  -->
+
+    <footer></footer>
+
+    <script type="text/javascript" src="headFoot.js"></script>
+</body>
+</html>
